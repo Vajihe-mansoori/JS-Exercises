@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="style.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="tools">
+        <input type="color" class="color" onchange="color(this.value)" />
+        <button class="size inc fa fa-plus" onclick="inc()"></button>
+        <button class="size dec fa fa-minus" onclick="dec()"></button>
+        <button class="bold fa fa-bold" onclick="bold(this)"></button>
+        <button class="italic fa fa-italic" onclick="italic(this)"></button>
+        <button class="left fa fa-align-left" onclick="left(this)"></button>
+        <button
+          class="center fa fa-align-center"
+          onclick="center(this)"
+        ></button>
+        <button class="right fa fa-align-right" onclick="right(this)"></button>
+      </div>
+      <textarea class="text" id="text" placeholder="Please Writing"></textarea>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
